@@ -2,7 +2,8 @@
 boxpathgetter
 
 ## Overview
-A tool for getting hidden box path
+A tool for getting hidden box path. 
+Develeped by Electron.
 
 ## Requirement
 Windows 10 
@@ -17,6 +18,7 @@ Windows 10
 ## Reference
 
 ## Author
+Koichi Uchimura
 
 ## Licence
 MIT License
