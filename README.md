@@ -1,5 +1,5 @@
 # name
-demae-boxpathgetter
+boxpathgetter
 
 ## Overview
 A tool for getting hidden box path

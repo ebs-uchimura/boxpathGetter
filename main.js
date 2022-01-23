@@ -21,7 +21,7 @@ const USER_ROOT_PATH = process.env[process.platform == "win32" ? "USERPROFILE" :
 const CHROME_EXEC_PATH1 = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'; // chrome.exe path1
 const CHROME_EXEC_PATH2 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'; // chrome.exe path2
 const CHROME_EXEC_PATH3 = '\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe'; // chrome.exe path3
-const FIRST_URL = 'https://line.ent.box.com/';
+const FIRST_URL = '****';
 const CHOOSE_FILE = '読み込むCSVを選択してください。'; // file dialog
 
 // Modules
@@ -209,7 +209,7 @@ app.on('ready', async() => {
             });
 
             // reg
-            const re = new RegExp("^https://line.ent.box.com/", "i");
+            const re = new RegExp("^*****", "i");
             // extract only second column
             const records = await tmpRecords.map(item => item[1]);
             // initialize page
@@ -219,7 +219,7 @@ app.on('ready', async() => {
                 try {
                     // initialize flgs
                     errorFlg = false;
-                    // if https://line.ent.box.com/~
+                    // if https://*****~
                     if(re.test(records[i])) {
                         // goto page
                         await page.goto(records[i], {waitUntil: 'domcontentloaded'});
